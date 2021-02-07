@@ -1,0 +1,40 @@
+.clicable{
+    cursor: pointer;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+  }
+  @media (min-width: 900px){
+    .num{
+      color: honeydew;
+       font-size: 20px;
+       padding-left: 10px;
+       padding-top: 10px; 
+       margin-left: 10px
+  }
+  }
+  @media (max-width: 900px){
+    .num{
+      color: honeydew;
+       font-size: 20px;
+     
+       padding-top: 10px; 
+      
+  }
+  }
+
+
+.item{
+  font-size: 15px;
+	text-transform: uppercase;
+	color: #111111;
+	font-weight: 500;
+	display: block;
+	padding: 2px 0;
+	position: relative;
+}

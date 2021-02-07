@@ -1,0 +1,52 @@
+<section class="shop-cart spad">
+    <div class="container" >
+        <div class="row"> 
+                
+          
+            <div class="col-lg-9" style="margin-left: 150px;">
+                <div style="padding-top: 10px; " class="col-lg-12 form-inline my-2 my-lg-0 pull-right" >
+         
+                    <input class="form-control mr-sm-2" type="text" >
+              
+                 
+            </div>    
+                <div class="titre"> Gestion des produits</div>
+              
+                    <div (click)="newProduct()" class="add clicable pull-right">Ajouter <span class="glyphicon glyphicon-plus-sign" ></span></div>
+
+                <div class="shop__cart__table">
+                    <table>     <thead>
+                            <tr>
+                                <th style="text-align: center;">Id</th>
+
+                                <th style="text-align: center;">Nom</th>
+                              
+                                <th style="text-align: center;">Catégorie</th>
+                            
+                            </tr>
+                        </thead>
+                        <tbody *ngIf="products">
+                            <tr *ngFor="let c of products">
+                                    <td class="item">{{c.id}}</td>
+                                <td class="cart__price" style="text-align: center;">
+                                    {{c.name}}
+                                </td>
+                                <td class="cart__price" style="text-align: center;">
+                                    {{c.category.name}}
+                                </td>
+                               
+                             
+                                <td class="cart__close"><span (click)="OnDeleteProduct(c.id)"  class="icon_close"></span></td>
+                                <td class="cart__close"><span (click)="updateProduct(c)" class="glyphicon glyphicon-edit">edit</span></td>
+                           
+                            </tr>
+                         
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+  
+       
+    </div>
+</section>
